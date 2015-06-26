@@ -126,6 +126,7 @@ public class WeatherActivity extends Activity {
 	
 	public void onBackPressed(){
 		Intent intent=new Intent(WeatherActivity.this,ChooseAreaActivity.class);
+		intent.putExtra("from_weather_activity", true);
 		startActivity(intent);
 		finish();
 	}
